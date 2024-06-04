@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+@include mat.all-component-themes($myMovie-Angular-client-theme);
+
+/* add global styles to this file */
+html, body { height: 100%; background-color: #212121; color: #ffffff; font-size: 18px;}
+h1 { font-size: 5em;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
