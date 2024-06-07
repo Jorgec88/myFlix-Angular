@@ -10,27 +10,24 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements OnInit {
-  constructor(
-    public router: Router,
-    public snackBar: MatSnackBar
-    ) {}
-    
-    ngOnInit(): void {}
+  constructor(public router: Router, public snackBar: MatSnackBar) {}
 
-    public openMovies(): void {
-      this.router.navigate(['movies']);
-    }
+  ngOnInit(): void {}
 
-    public openProfile(): void {
-      this.router.navigate(['profile']);
-    }
+  public openMovies(): void {
+    this.router.navigate(['movies']);
+  }
 
-    public logoutUser(): void {
-      localStorage.setItem('user', '');
-      localStorage.setItem('token', '');
-      this.router.navigate(['welcome']);
-      this.snackBar.open('User logout successful', 'OK', {
-        duration: 2000
-      })
-    }
+  public openProfile(): void {
+    this.router.navigate(['profile']);
+  }
+
+  public logoutUser(): void {
+    localStorage.setItem('user', '');
+    localStorage.setItem('token', '');
+    this.router.navigate(['welcome']);
+    this.snackBar.open('User logout successful', 'OK', {
+      duration: 2000
+    });
+  }
 }

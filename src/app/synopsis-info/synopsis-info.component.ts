@@ -11,16 +11,10 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class SynopsisInfoComponent implements OnInit {
   constructor(
     @Inject(MAT_DIALOG_DATA)
-
-  public data: {
-    Description: string
-  }
+    public data: {
+      Description: string;
+    }
   ) {}
 
-  ngOnInit(): void {
-    
-  }
-
+  ngOnInit(): void {}
 }
-
-
