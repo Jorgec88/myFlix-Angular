@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{a as e,b as i,i as p,k as n,l as m,o as s,s as f,v as c}from"./chunk-JJOTAHVQ.mjs";var a=(()=>{let o=class o{constructor(){this.title="myFlix-Angular"}};o.\u0275fac=function(r){return new(r||o)},o.\u0275cmp=e({type:o,selectors:[["app-root"]],decls:1,vars:0,template:function(r,x){r&1&&i(0,"router-outlet")},dependencies:[f]});let t=o;return t})();var d=[];var l={providers:[c(d),m()]};var v={providers:[s()]},u=p(l,v);var C=()=>n(a,u),q=C;export{q as a};
