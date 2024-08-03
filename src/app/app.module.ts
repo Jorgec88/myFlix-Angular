@@ -10,7 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,45 +31,39 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
-  { path: 'profile', component: UserProfileComponent},
-  { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
+  { path: 'profile', component: UserProfileComponent },
+  { path: '', redirectTo: 'welcome', pathMatch: 'prefix' }
 ];
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        UserRegistrationFormComponent,
-        UserLoginFormComponent,
-        MovieCardComponent,
-        WelcomePageComponent,
-        NavbarComponent,
-        UserProfileComponent,
-        DirectorInfoComponent,
-        GenreInfoComponent,
-        SynopsisInfoComponent
-    ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        FormsModule,
-        BrowserAnimationsModule,
-        MatDialogModule,
-        MatInputModule,
-        MatButtonModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatSnackBarModule,
-        MatIconModule,
-        MatToolbarModule,
-        RouterModule.forRoot(appRoutes)
-    ],
-    providers: [
-        provideAnimationsAsync()
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    UserRegistrationFormComponent,
+    UserLoginFormComponent,
+    MovieCardComponent,
+    WelcomePageComponent,
+    NavbarComponent,
+    UserProfileComponent,
+    DirectorInfoComponent,
+    GenreInfoComponent,
+    SynopsisInfoComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatIconModule,
+    MatToolbarModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent]
 })
-
 export class AppModule {}
-
-
